@@ -6,7 +6,6 @@
                            aki class e er moddhe    |    subslass and super class er moddhe(obossoi vinno class era)
                    method load hoy by name    |    method defination replace hoy   
       method name ta same holei hoy     |    method name and parameter same hote hobe
- NOTE : method overload er syntex je
  */
 using System;
 namespace Methods
@@ -30,7 +29,7 @@ namespace Methods
     class Mother
         {
         public string m_name = "I am mother";
-        public virtual void supMethod()
+        public void supMethod()
             {
             Console.WriteLine("This is in Super Class : " + m_name);
             }
@@ -43,7 +42,7 @@ namespace Methods
           public string m_name = "I am mother";  
          */
         public string s_name = "I am son";
-        public override void supMethod()
+        public void supMethod()
             {
             base.supMethod();
             Console.WriteLine("This is in Sub Class : " + s_name);

@@ -6,5 +6,9 @@ namespace Methods
     {
     class MethodHiding
         {
+        public static void Main()
+            {
+
+            }
         }
     }

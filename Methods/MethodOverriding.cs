@@ -29,7 +29,7 @@ namespace Methods
     class Mother
         {
         public string m_name = "I am mother";
-        public void supMethod()
+        public virtual void supMethod()
             {
             Console.WriteLine("This is in Super Class : " + m_name);
             }
@@ -42,7 +42,7 @@ namespace Methods
           public string m_name = "I am mother";  
          */
         public string s_name = "I am son";
-        public void supMethod()
+        public override void supMethod()
             {
             base.supMethod();
             Console.WriteLine("This is in Sub Class : " + s_name);

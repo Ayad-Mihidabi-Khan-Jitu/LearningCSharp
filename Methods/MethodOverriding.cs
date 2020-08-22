@@ -6,6 +6,11 @@
                            aki class e er moddhe    |    subslass and super class er moddhe(obossoi vinno class era)
                    method load hoy by name    |    method defination replace hoy   
       method name ta same holei hoy     |    method name and parameter same hote hobe
+Syntex of method Overriding : In Super Class -> virtual methodName(){}    |    In Sub Class -> override methodName(){} 
+NOTE: jodi super class er method k sub class diya access korte hoy taile "base.fuctionName();" ata k akta function vitore vorte hobe
+              void spfunc(){
+                                base.fuctionName();
+                                      }
  */
 using System;
 namespace Methods

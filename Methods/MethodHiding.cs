@@ -6,5 +6,17 @@ namespace Methods
     {
     class MethodHiding
         {
+        public static void Main()
+            {
+
+            }
+        }
+    class Father
+        {
+
+        }
+    class Daughter
+        {
+
         }
     }

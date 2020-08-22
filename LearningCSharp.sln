@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypeAndVariableType", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessSpecifier", "AccessSpecifier\AccessSpecifier.csproj", "{2B5A08C6-964E-42DC-A7D3-4047808E0511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice.csproj", "{A299F253-309B-4493-82CC-524BD34C98F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "Practice\Practice.csproj", "{A299F253-309B-4493-82CC-524BD34C98F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{5338E3F4-283D-4537-854B-A18C26F9D23D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A299F253-309B-4493-82CC-524BD34C98F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A299F253-309B-4493-82CC-524BD34C98F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A299F253-309B-4493-82CC-524BD34C98F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5338E3F4-283D-4537-854B-A18C26F9D23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5338E3F4-283D-4537-854B-A18C26F9D23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5338E3F4-283D-4537-854B-A18C26F9D23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5338E3F4-283D-4537-854B-A18C26F9D23D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,37 +22,46 @@ namespace Methods
         {
         public static void Main()
             {
+            
             Daughter meye = new Daughter();
             //meye.subMethod();
             Father baba = meye;
-            baba.supMethod();
+            //baba.supMethod();
             baba.VsupMethod();
+            
             }
         }
     class Father
         {
         string f_name = "I am father";
-        public void supMethod()
+        /*public void supMethod()
             {
             Console.WriteLine("This is in Super Class : "+f_name);
             }
+        */
+        
         public virtual void VsupMethod()
             {
             Console.WriteLine("This is in Super Class : (defined as virtual) " + f_name);
             }
+        
         }
     class Daughter:Father
         {
         string d_name = "I am daughter";
         //public void supMethod()
+        /*
         public new void supMethod()
             {
-            Console.WriteLine("This is in Super Class : " + d_name);
+            Console.WriteLine("This is in Sub Class : " + d_name);
             }
+        */
+        
         public override void VsupMethod()
             {
-            Console.WriteLine("This is in Super Class : (defined as overriden) " + d_name);
+            Console.WriteLine("This is in Sub Class : (defined as overriden) " + d_name);
             }
+        
 
         }
     }

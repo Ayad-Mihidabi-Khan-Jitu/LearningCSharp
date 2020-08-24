@@ -19,7 +19,7 @@ namespace Methods
         {
         public static void Main()
             {
-            Mother ma = new Mother();
+            /*Mother ma = new Mother();
             ma.supMethod();
             Console.WriteLine(ma.m_name);
 
@@ -27,6 +27,9 @@ namespace Methods
             chele.supMethod();
             Console.WriteLine(chele.m_name); 
             Console.WriteLine(chele.s_name); 
+        */
+            Son s1 = new Son();
+            s1.supMethod(); // 
             }
         }
 
@@ -49,7 +52,7 @@ namespace Methods
         public string s_name = "I am son";
         public override void supMethod()
             {
-            base.supMethod();
+            //base.supMethod();
             Console.WriteLine("This is in Sub Class : " + s_name);
             //Console.WriteLine("This is in Sub Class : " + m_name);
            

@@ -1,4 +1,19 @@
-﻿using System;
+﻿/*
+Inheritance bojhar jonno amra duita relation bujhbo age
+1. is relatoin : A person is a teacher, A person is a business man. is ralation thakle inheritance kora jay
+2. has relation :  A Bank has Customer. tai ekhane Bank and Customer er moddhe inheritance kora jabe na.
+Inheritance : Jodi dui ta class er moddhe same boisisto thake tahole jetar moddhe kom boisisto thakbe seta k
+                          Super class ar jeta te beshi seta k Sub class. Infact je class ta sobar jonnoi common features dharon korbe setai Super Class
+                          ar baki shob guli Sub Class.
+Claims of Interitance : i) obossoi 2 BA TOTODHIK class lagbe 
+                                            ii) class duitar moddhe obossoi IS RELATION thakte hobe
+                                            iii) je class ta shokol class er moddhei common seta SUPER Class
+                                            iv) Sub class ti super class er shob kichu,instance variable and methods inherit kore amonki Super Class er constructor o
+                                                  Sub Class call kore. Constructor!! koya chillanor kono mane nai, amra jani constructor er maddhomei instance variable 
+                                                  value prapto hoy that is kono instance variable access korte pare manei holo constructor er maddhomei access kore.
+Syntex: class Sub_Class : Super_Class
+*/
+using System;
 namespace Inheritance
     {
     class Inheritance
@@ -7,10 +22,10 @@ namespace Inheritance
             {
             Console.WriteLine("Inheritance");
             GovtTeacher t1 = new GovtTeacher();
-            t1.personName();
-            t1.salaryInstitution();
-            t1.eidBonus();
-            t1.penofins();
+            t1.personName(); //ata super class er method
+            t1.salaryInstitution(); //ata super class er method
+            t1.eidBonus(); //ata super class er method
+            t1.penofins(); //akmatro ata class er method
             }
         }
     class Person

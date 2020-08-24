@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Constructor.ParameterizedConstructor</StartupObject>
+    <StartupObject>Constructor.ImplecitConstructor</StartupObject>
   </PropertyGroup>
 
 </Project>

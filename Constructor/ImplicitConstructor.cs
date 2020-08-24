@@ -7,14 +7,14 @@ namespace Constructor
         int firstNum, SecondNum;
         bool ControllSwitch;
         string firstName;
-        /*
+        
         ImplecitConstructor(){
         firstNum=0; 
         SecondNum=0;
         ControllSwitch=false;
         firstName=null;    
         } 
-        */
+        
 
         /*
         ImplecitConstructor(int f, int s, bool c, string fn)
@@ -27,19 +27,26 @@ namespace Constructor
         */
             public static void Main(string[] args)
         {
-            ImplecitConstructor valuePrint = new ImplecitConstructor();
+            //ImplecitConstructor valuePrint = new ImplecitConstructor();
             //Constructor.ImplecitConstructor valuePrint = new Constructor.ImplecitConstructor(); //valid
             // ImplecitConstructor valuePrint = new Constructor.ImplecitConstructor(); //also valid
-            
+            /*
             Console.WriteLine(valuePrint.firstName);
             Console.WriteLine(valuePrint.SecondNum);
             Console.WriteLine(valuePrint.firstNum);
             Console.WriteLine(valuePrint.ControllSwitch);
+            */
             /*
             valuePrint.firstName = "saikat";
             valuePrint.firstNum = 1;
             valuePrint.SecondNum = 2;
             valuePrint.ControllSwitch = true;
+            
+            Console.WriteLine(valuePrint.firstName);
+            Console.WriteLine(valuePrint.SecondNum);
+            Console.WriteLine(valuePrint.firstNum);
+            Console.WriteLine(valuePrint.ControllSwitch);
+*/
             
             ImplecitConstructor valuePrint = new ImplecitConstructor(12,13,true,"SAIKAT");
             Console.WriteLine(valuePrint.firstName);

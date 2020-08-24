@@ -7,8 +7,7 @@
                                                      object create kora hoy tokhon child class tar nijer constructor call korar sathe sathei age parent class er contructor
                                                      call kore.
 Claim: je constructor er maddhome child class object create korbo sei rokom constructor parent class e thakte hobe 
-
- */
+*/
 using System;
 namespace Inheritance
     {

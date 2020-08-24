@@ -32,27 +32,34 @@ namespace Inheritance
             Student ss2 = (Student)new Person();//Shob Person Student na
             Console.WriteLine(ss2.name); 
             */
+
+            Person p4 = new Student();
+            Student s4 = (Student)p4;
+            Console.WriteLine(s4.name);
+
+
+            /*
             Person pp2 = new Student();
             Student ss2 = pp2 as Student;//Shob Person Student na
             Console.WriteLine(ss2.name);
-
+            */
             }
         }
     class Person
         {
-        public string name;
-        public int age;
-        public string address;
+        public string name = "Jitu";
+        public int age = 24;
+        public string address = "Dhaka";
 
         }
     class Student:Person
         {
-        public int roll;
-        public string institution;
+        public int roll = 28;
+        public string institution = "PSTU";
         }
     class GraduateStudent:Student
         {
-        public string gratuationDate;
+        public string gratuationDate = "Onischit";
         }
 
     }

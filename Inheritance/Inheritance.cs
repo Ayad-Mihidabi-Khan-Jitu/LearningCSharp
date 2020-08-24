@@ -26,9 +26,10 @@ namespace Inheritance
             t1.salaryInstitution(); //ata super class er method
             t1.eidBonus(); //ata super class er method
             t1.penofins(); //akmatro ata class er method
+            PrivateTeacher p1 = new PrivateTeacher();
             }
         }
-    class Person
+    class People 
         {
         public string name = "Jitu";
         public void personName()
@@ -36,8 +37,9 @@ namespace Inheritance
             Console.WriteLine("Name of the person : " + name);
             }
         }
-    class Teacher : Person
+    class Teacher:People
         {
+        
         public int salary = 100000;
         public string institution = "PSTU";
         public void salaryInstitution() {

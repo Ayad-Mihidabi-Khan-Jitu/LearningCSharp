@@ -38,8 +38,7 @@ namespace Inheritance
             }
         }
     class Teacher:People
-        {
-        
+        {   
         public int salary = 100000;
         public string institution = "PSTU";
         public void salaryInstitution() {

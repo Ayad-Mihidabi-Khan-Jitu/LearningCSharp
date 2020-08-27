@@ -28,8 +28,12 @@ namespace Methods
             Console.WriteLine(chele.m_name); 
             Console.WriteLine(chele.s_name); 
         */
-            Son s1 = new Son();
-            s1.supMethod(); // 
+            //Mother m1 = new Mother();
+            //m1.supMethod()
+
+            //Son s1 = new Son();
+            //s1.supMethod(); //
+            
             }
         }
 

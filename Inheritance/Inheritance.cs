@@ -12,6 +12,8 @@ Claims of Interitance : i) obossoi 2 BA TOTODHIK class lagbe
                                                   Sub Class call kore. Constructor!! koya chillanor kono mane nai, amra jani constructor er maddhomei instance variable 
                                                   value prapto hoy that is kono instance variable access korte pare manei holo constructor er maddhomei access kore.
 Syntex: class Sub_Class : Super_Class
+NOTE : INHERITANCE OFF korao jay -> scaled class ClassName{ } 
+               je class ti scaled hobe se class k kew ar inherit korte parbe na
 */
 using System;
 namespace Inheritance
@@ -55,7 +57,7 @@ namespace Inheritance
             Console.WriteLine("Eid bonus "+eeidi);
             }
         }
-    class GovtTeacher:PrivateTeacher
+    sealed class GovtTeacher:PrivateTeacher
         {
         public int pension=3000000;
         public void penofins()
@@ -63,5 +65,19 @@ namespace Inheritance
             Console.WriteLine("Pension : "+ pension);
             }
         }
- 
+    /*
+    /// ata compile time ei wrong dekhbe je can't inherit GovtTeacher
+    class Professor : GovtTeacher
+        {
+
+        }
+    */
+    
+    /*
+    /// ata thik thak asbe 
+    class Professor:PrivateTeacher
+        {
+
+        }
+ */
     }

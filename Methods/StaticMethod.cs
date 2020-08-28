@@ -18,8 +18,7 @@ namespace Methods
             Manus s1 = new Manus();
             s1.nonStaicMethod();
             Manus.staticMethod();
-            
-
+           
             /*
             //When to use static
             Manus m1 = new Manus();

@@ -49,7 +49,7 @@ namespace Inheritance
 
         }
     }
-    class PrivateTeacher:Teacher
+     class PrivateTeacher:Teacher
         {
         public int eeidi=50000;
         public void eidBonus()

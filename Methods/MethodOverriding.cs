@@ -38,7 +38,7 @@ namespace Methods
         }
 
     ///this is super class
-    class Mother
+     class Mother
         {
         public string m_name = "I am mother";
         public virtual void supMethod()

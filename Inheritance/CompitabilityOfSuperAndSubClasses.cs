@@ -53,36 +53,56 @@ namespace Inheritance
             //Student s4 = new Student();
             //s4 = (Student)p5; //No error but runtime e exception: Unable to cast object of type 'Inheritance.Person' to type 'Inheritance.Student'
 
-            /// type cast korlam...4 and  parent class er object ta child class er memory k point kore thakbe
-            //Person p6 = new Student();  // int i = 6; double d = i; 
- 
-            //Student s5 = (Student)p6;    // i = d; //Successful type cast
-            //Console.WriteLine(p6.roll); //roll is not avaible in person
-            //Console.WriteLine(s5.name); //
-
-            /// type cast korlam...5 and  parent class er object ta child class er memory k point kore thakbe
-            //Student s7 = new Student();
-            //Person p8 = s7;
-            //Console.WriteLine(p8.name);
-            //Student s8 = (Student)p8; //Successful type cast
-            //Console.WriteLine(s8.roll);
             /*
-            Person pp2 = new Student();
-            Student ss2 = pp2 as Student;//Shob Person Student na
-            Console.WriteLine(ss2.name);
+            /// type cast korlam...4 and  parent class er object ta child class er memory k point kore thakbe
+            Person p6 = new Student();  // int i = 6; double d = i; 
+            Student s5 = (Student)p6;    // i = d; //Successful type cast
+            //Console.WriteLine(p6.roll); //roll is not avaible in person
+            Console.WriteLine(s5.name); //
             */
 
-            Person p9 = new Person();
-            Person p10 = new Student();
-            Person p11 = new GraduateStudent();
-            GraduateStudent g3 = new GraduateStudent();
-            Student s31 = new GraduateStudent();
-            s31.Activity();
-            //p9.Activity();//per
-            //p10.Activity();//stu
-            //p11.Activity();//gtu
-            //g3.Activity();
+            /*
+            /// type cast korlam...5 and  parent class er object ta child class er memory k point kore thakbe
+            Student s7 = new Student();
+            Person p8 = s7;
+            Console.WriteLine(p8.name);
+            Student s8 = (Student)p8; //Successful type cast
+            //Console.WriteLine(s8.roll);
+            */
 
+            /*
+            /// type cast korlam...5 and  parent class er object ta child class er memory k point kore thakbe
+            Person p9 = new Student();
+            Student s9 = p9 as Student; //(Student)p9 //Successful type cast using "as" keyword
+            Console.WriteLine(s9.name);
+            */
+
+            /*
+            ///Valid object reference compitability checking using "is" keyword
+            Person pp = new Person();
+            Student ss = new Student();
+            if (ss is Person)
+                { Console.WriteLine("Person class er object Student Class er object k refer korte pare");  }
+            if (pp is Student) { Console.WriteLine("Student class er object People Class er object k refer korte pare");  }
+           */
+
+            /*
+            ///Dynamic method despatch (method overriding)
+            Person p10 = new Person();
+            Person p11 = new Student();
+            Person p12 = new GraduateStudent();
+            GraduateStudent g4 = new GraduateStudent();
+            */
+           /// method guli override kora thakle dynamic method call hobe 
+           /// override na kora thakle je class er object reference e declare kora hoy 
+            // se class er method e call hobe that is method guli hide hoye jabe
+            //p10.Activity(); //per
+            //p11.Activity(); //stu
+            //p12.Activity(); //gtus
+            //g4.Activity(); //gtus
+
+            //Student s31 = new GraduateStudent();
+            //s31.Activity();
 
             }
         }

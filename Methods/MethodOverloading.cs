@@ -7,11 +7,11 @@ namespace Methods
         //but tader return type othoba parameter er data type e vinnota thakbe
         // NOTE : dui ta method er moddhe minimum akta vinnota thaklei tara overloaded hobe 
         // 1. return int, parameter int int
-        public static int addtion(int a, int b)
+        public  static  int addtion(int a, int b)
          {
-       int sum;
-       sum = a + b;
-       return sum;
+          int sum;
+          sum = a + b;
+          return sum;
          }
 
         // 2. return long, parameter long long

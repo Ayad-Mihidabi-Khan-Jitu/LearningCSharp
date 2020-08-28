@@ -12,6 +12,7 @@
  ii) Main difference : Super class er instance jodi Sub class er instance k refer kore tahole 
                                         super class er instance dara probeshkrito overriden method betito method 
                                         direct Super Class er method k call kore. 
+NOTE: method hiding holew instance variable hiding hoy na.
  */
 
 ///ami kichu akta
@@ -22,18 +23,26 @@ namespace Methods
         {
         public static void Main()
             {
-            
-            Daughter meye = new Daughter();
+            //Daughter meye = new Daughter();
             //meye.subMethod();
-            Father baba = meye;
+            //Father baba = meye;
             //baba.supMethod();
-            baba.VsupMethod();
+            //baba.VsupMethod();
             
+            /*
+            ///checking variable hiding (not valid)
+            Father f1 = new Daughter();
+            int v = f1.t;
+            Console.WriteLine(v);
+            Daughter d1 = (Daughter)f1;
+            Console.WriteLine(d1.t);
+           */
             }
         }
     class Father
         {
-        string f_name = "I am father";
+        //public int t = 100;
+        public string f_name = "I am father";
         /*public void supMethod()
             {
             Console.WriteLine("This is in Super Class : "+f_name);
@@ -48,7 +57,8 @@ namespace Methods
         }
     class Daughter:Father
         {
-        string d_name = "I am daughter";
+        //public int t = 50;
+        public string d_name = "I am daughter";
         //public void supMethod()
         /*
         public new void supMethod()

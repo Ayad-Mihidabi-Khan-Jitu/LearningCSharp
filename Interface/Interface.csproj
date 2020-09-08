@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Abstract.PolymorphismInAbstract</StartupObject>
+    <StartupObject>Interface.PolymorphismInInterface</StartupObject>
   </PropertyGroup>
 
 </Project>

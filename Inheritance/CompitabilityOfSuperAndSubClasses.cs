@@ -1,4 +1,5 @@
 ﻿/*
+ * Object er opor depend kore jokhon object reference er change ashe tokhon take POLYMORPHISM bole
  Class er nam shunei bujhteso ghotonata ki!!
  #Kon class er kon class er object create korete parbe seta :
  1. Valid object reference creation : parent class er object reference tar child class er object dara create kora jabe 
@@ -20,6 +21,7 @@ namespace Inheritance
         {
         public static void Main()
             {
+            ///POLYMORPHISM
             ///Parent class tar child class er memory point/refer korte pare
             Person p1 = new Person();
             Person p2 = new Student();
@@ -53,38 +55,48 @@ namespace Inheritance
             //Student s4 = new Student();
             //s4 = (Student)p5; //No error but runtime e exception: Unable to cast object of type 'Inheritance.Person' to type 'Inheritance.Student'
 
-            /*
+            
             /// type cast korlam...4 and  parent class er object ta child class er memory k point kore thakbe
             Person p6 = new Student();  // int i = 6; double d = i; 
             Student s5 = (Student)p6;    // i = d; //Successful type cast
             //Console.WriteLine(p6.roll); //roll is not avaible in person
             Console.WriteLine(s5.name); //
-            */
+            
 
-            /*
+            
             /// type cast korlam...5 and  parent class er object ta child class er memory k point kore thakbe
             Student s7 = new Student();
             Person p8 = s7;
             Console.WriteLine(p8.name);
             Student s8 = (Student)p8; //Successful type cast
             //Console.WriteLine(s8.roll);
-            */
+            
 
-            /*
+            
             /// type cast korlam...5 and  parent class er object ta child class er memory k point kore thakbe
             Person p9 = new Student();
             Student s9 = p9 as Student; //(Student)p9 //Successful type cast using "as" keyword
             Console.WriteLine(s9.name);
-            */
+            
 
-            /*
+            
             ///Valid object reference compitability checking using "is" keyword
             Person pp = new Person();
             Student ss = new Student();
             if (ss is Person)
                 { Console.WriteLine("Person class er object Student Class er object k refer korte pare");  }
             if (pp is Student) { Console.WriteLine("Student class er object People Class er object k refer korte pare");  }
-           */
+            
+            /*
+            if(ss is Person)
+                {
+                Person pt = new Student();
+                }
+            else
+                {
+                Student st = new Student();
+                }
+            */
 
             /*
             ///Dynamic method despatch (method overriding)

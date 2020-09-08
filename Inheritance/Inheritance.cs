@@ -12,14 +12,16 @@ Claims of Interitance : i) obossoi 2 BA TOTODHIK class lagbe
                                                   Sub Class call kore. Constructor!! koya chillanor kono mane nai, amra jani constructor er maddhomei instance variable 
                                                   value prapto hoy that is kono instance variable access korte pare manei holo constructor er maddhomei access kore.
 Syntex: class Sub_Class : Super_Class
-NOTE : INHERITANCE OFF korao jay -> scaled class ClassName{ } 
+NOTE : INHERITANCE OFF korao jay -> sealed class ClassName{ } 
                je class ti scaled hobe se class k kew ar inherit korte parbe na
+               C# multi inheritance allow kore na. multi inheriance mane holo akta child er aker odhik parent. bastobew jeta sombov na.
+               C++ multi inheritance allow kore.
 */
 using System;
 namespace Inheritance
     {
     class Inheritance
-        {
+        { 
         static void Main(string[] args)
             {
             Console.WriteLine("Inheritance");
@@ -28,9 +30,11 @@ namespace Inheritance
             t1.salaryInstitution(); //ata super class er method
             t1.eidBonus(); //ata super class er method
             t1.penofins(); //akmatro ata class er method
-            PrivateTeacher p1 = new PrivateTeacher();
+             
+            People p1 = new People(); 
             }
         }
+
     class People 
         {
         public string name = "Jitu";
@@ -57,7 +61,7 @@ namespace Inheritance
             Console.WriteLine("Eid bonus "+eeidi);
             }
         }
-    sealed class GovtTeacher:PrivateTeacher
+     sealed class GovtTeacher:PrivateTeacher
         {
         public int pension=3000000;
         public void penofins()
@@ -65,8 +69,9 @@ namespace Inheritance
             Console.WriteLine("Pension : "+ pension);
             }
         }
-    /*
+    
     /// ata compile time ei wrong dekhbe je can't inherit GovtTeacher
+    /*
     class Professor : GovtTeacher
         {
 
@@ -78,6 +83,6 @@ namespace Inheritance
     class Professor:PrivateTeacher
         {
 
-        }
- */
+        }*/
+ 
     }

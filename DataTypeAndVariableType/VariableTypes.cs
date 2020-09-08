@@ -37,8 +37,8 @@ namespace DataTypeAndVariableType
         //2. Instance Variable
         int instanN;
         //3. Static(Class) Variable
-        static int instanS;
-       static int count=0;
+        //static int instanS;
+        static int count=0;
         //int count=0;
         //4. Constant Variable
         const double PI = 3.1416;
@@ -88,49 +88,52 @@ namespace DataTypeAndVariableType
             Console.WriteLine(obv2.instanN);
             Console.WriteLine(obv3.instanN);
             */
+
             /*
             Console.WriteLine("3.Static Variable ");
             Console.WriteLine(VariableTypes.instanS);
             Console.WriteLine(instanS);
             */
 
-            
+            /*
             Console.WriteLine("Difference Between Instance Variable and Static Variable");
             ///amra aita bujhbo akta prblm solve korar maddhome
             //pblm : count ta number of object created of this class
             //solu : amra jani je prottek ta object create korar somoy constructor call hoy so constructor er vitor e akta count bosaya delei hoy
             VariableTypes noOfObj1 = new VariableTypes(223);
             //VariableTypes v1 = new VariableTypes();
-            Console.WriteLine("No of Object : "+count+ " Value of instance variable noOfObj1.instanN = " + noOfObj1.instanN);
+            Console.WriteLine("No of Object : "+ VariableTypes.count + " Value of instance variable noOfObj1.instanN = " + noOfObj1.instanN);
             //Console.WriteLine("No of Object : " + v1.count + " Value of instance variable noOfObj1.instanN = " + noOfObj1.instanN);
             VariableTypes noOfObj2 = new VariableTypes(224);
             //VariableTypes v2 = new VariableTypes();
-            Console.WriteLine("No of Object : " + VariableTypes.count + " Value of instance variable noOfObj2.instanN = " + noOfObj2.instanN);
+            Console.WriteLine("No of Object : " + count + " Value of instance variable noOfObj2.instanN = " + noOfObj2.instanN);
             //Console.WriteLine("No of Object : " + v2.count + " Value of instance variable noOfObj1.instanN = " + noOfObj1.instanN);
             VariableTypes noOfObj3 = new VariableTypes(225);
             //VariableTypes v3 = new VariableTypes();
-            Console.WriteLine("No of Object : " + VariableTypes.count + " Value of instance variable noOfObj3.instanN = " + noOfObj3.instanN);
+            Console.WriteLine("No of Object : " + count + " Value of instance variable noOfObj3.instanN = " + noOfObj3.instanN);
             //Console.WriteLine("No of Object : " + v3.count + " Value of instance variable noOfObj1.instanN = " + noOfObj1.instanN);
-
-            /*
-             Console.WriteLine("4. Constant Variable");
-             //const double ConsC; //value must be initialized
-             const double ConsC = 76243435;
-             //ConsC = 123; // akbar initialized korar por kono value assign kora jabe na
-             Console.WriteLine("value of the constant variable(local) ConsC = "+ConsC);
-             Console.WriteLine("value of the constant variable(instance) PI = " + PI);
             */
 
             /*
+             Console.WriteLine("4. Constant Variable");
+            //const double ConsC; //value must be initialized
+            const double ConsC = 76243435;
+             //ConsC = 123; // akbar initialized korar por kono value assign kora jabe na
+             Console.WriteLine("value of the constant variable(local) ConsC = "+ ConsC);
+             Console.WriteLine("value of the constant variable(instance) PI = " + PI);
+            */
+
+           
             Console.WriteLine("5. Readonly Variable");
             VariableTypes robj1 = new VariableTypes();
-            //robj.rdonlVar = 'e'; // cz notun kore assign kora jay na 
+            //robj1.rdonlVar = 'e'; // cz notun kore assign kora jay na 
             //karon readonly akta object er moddhe akbar value assign hoye gele oi object er jonno ta change kora jay na
             Console.WriteLine("Value of readonly variable (initialized while declared) = "+robj1.rdonlVar);
             VariableTypes robj2 = new VariableTypes('U');
             Console.WriteLine("Value of readonly variable (initialized in the constructor) = " + robj2.rdonlVar);
-           */
+           
 
             }
         }
+  
     }

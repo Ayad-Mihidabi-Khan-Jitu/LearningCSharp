@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection.PortableExecutable;
-using System.Text;
 
 namespace Practice
     {
@@ -22,6 +19,8 @@ namespace Practice
             Console.WriteLine(p2.t);
             p1.t = 100;
             Console.WriteLine(p2.t);
+            int f =Guava.h;
+            Console.WriteLine(f);
             }
         }
 
@@ -29,5 +28,9 @@ namespace Practice
         {
         public int t = 10;
         public int n;
+        }
+    static class Guava
+        {
+        static public int h = 10;
         }
     }

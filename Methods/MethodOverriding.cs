@@ -56,7 +56,7 @@ namespace Methods
         public string s_name = "I am son";
         public override void supMethod()
             {
-            //base.supMethod();
+            base.supMethod();
             Console.WriteLine("This is in Sub Class : " + s_name);
             //Console.WriteLine("This is in Sub Class : " + m_name);
            

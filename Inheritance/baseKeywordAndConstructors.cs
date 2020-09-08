@@ -21,7 +21,7 @@ namespace Inheritance
             //C c1 = new C(); //
             //creating a object using amar create kora constructor
             C c2 = new C(1,2,3);
-
+            
             /*
             C c3 = c1;
             Console.WriteLine("Type of c1 = "+c1.GetType()+"    Type of c3 = "+c3.GetType());
@@ -33,13 +33,13 @@ namespace Inheritance
         }
     class A
         {
-        int a = 10;
-        /*
+         int a = 10;
+        
         public A()
             {
             Console.WriteLine("This is Class A (Default Constructor) and a = "+a);   
             }
-       */
+       
         public A(int x)
             {
             this.a = x;
@@ -50,13 +50,13 @@ namespace Inheritance
 
     class B:A
         {
-        int b = 20;
-        /*
+          int b = 20;
+        
         public B()//:base()
             {
             Console.WriteLine("This is Class B (Default Constructor) and b = "+b);
             }
-        */
+        
 
         public B(int x, int y):base(x) //A(1)
             {
@@ -70,12 +70,11 @@ namespace Inheritance
         {
         int c = 30;
 
-        /*
         public C()
             {
             Console.WriteLine("This is Class C (Default Constructor) and c = "+c);
             }
-        */
+        
         //C(1,2,3);
         
         public C(int x,int y, int z):base(x,y) // public B(x,y) public B(1,2) 

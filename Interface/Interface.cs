@@ -12,9 +12,10 @@
   iv)  variable guli private non static                              |              variable guli constant        
   v) multiple inhertence not allowed                             |              multiple inhertence allowed          
   
-  In broad sense INHERITANCE k full abstract bola jay, kivabe seta niche dekhacchi. Abstract er oi Business ta extend korsi.
+  In broad sense INTERFACE k full abstract bola jay, kivabe seta niche dekhacchi. Abstract er oi Business ta extend korsi.
+  interface er maddhome keno kaj ta korlam karon abstract class e je sellRate guli chilo oguli chailei ami change korte pari jar jonno business e
+  agun lagse abar but ai interface er kkhtre seta o string security pai karom interface e vairable guli constant hoy
  */
-
 
 using System;
 namespace Interface
@@ -56,13 +57,12 @@ namespace Interface
             Console.WriteLine("------------------------------------");
             Console.WriteLine("Today's Sale : " + saleBarishal);
             Console.WriteLine("");
-
             }
         }
 
     interface JSA_Dhaka
         {
-         const int saleRateDhaka = 20;
+        const int saleRateDhaka = 20;
          int CalculateSaleDhaka(int s1);
         }
 

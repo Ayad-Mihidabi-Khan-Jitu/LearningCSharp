@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace ClassAndObject
-{
+namespace ProjectsOfClassesAndObjects
+    {
     /*
      A customer opens an account in a bank, the customer must have an initial balance of 100tk
      while opening the account, the customer can withdraw, deposite and check his balance any time
     He wants , the bank does nt charge any fees for the first withdrewal but for all subseqent withdrawal,
      on the amount deposited by the customer as per its interest rate.
      */
-    class MyBank
+    class TestMyBank
     { 
         static void Main(string[] args)
         {

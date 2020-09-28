@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ClassAndObject
+namespace ProjectsOfClassesAndObjects
     {
      class ObjectReferencePreservation
         {

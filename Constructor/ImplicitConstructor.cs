@@ -10,6 +10,7 @@ namespace Constructor
         string feature;
         
         //Default constructor (bolod constructor)
+     
         ImplecitConstructor(){
             string name;
             int battarybackup;
@@ -54,6 +55,7 @@ namespace Constructor
             Console.WriteLine("This is kotha shone "+robot.controllable);
             Console.WriteLine("Battary backup "+robot.battarybackup+"hours");
             */
+
             /*
             ImplecitConstructor robot = new ImplecitConstructor("Tom", "He takes care of Jerry", true,12);
             Console.WriteLine("This is "+robot.name);

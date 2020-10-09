@@ -1,10 +1,10 @@
-﻿///Being human is given, but keeping our humanity is a choise.
+﻿///Being human is given, but keeping our humanity is a choice.
 /*
  ----------------------------------------------------
 Non-generic                             Generic
- ArrayList       ----------->         List <T>
+ ArrayList       ---------- >          List <T>
  HashTable    ----------->          Dictionary <T>
- SortedList    ------------>        SortedList <T> 
+ SortedList    ----------->          SortedList <T> 
  Stack              ----------->         Stack <T>
  Queue            ----------->         Queue <T>
 --------------------------------------------------
@@ -32,13 +32,13 @@ namespace Collection
             -data type must be defined at List
             -baki shob ArrayList motoi
            */
-
-            //List<int> list = new List<int>(2); // arraylist with no elements size = 2 
+            /*
+            List<int> list = new List<int>(2); // arraylist with no elements size = 2 
             //List<int> list = new List<int>(4) {1,2,3,4}; // arraylist with initialized elements
             //Console.WriteLine("Capacity of list : {0} ", list.Capacity);
             //Console.WriteLine("Count : list {0}", list.Count);
-            /*
-            list.Add(11);
+            
+            list.Add(1);
             Console.WriteLine(list[0]);
             list[0] = 0;
             Console.WriteLine(list[0]);
@@ -51,8 +51,8 @@ namespace Collection
             list.Add(33);
             Console.WriteLine("Capacity of list : {0} ", list.Capacity);
             Console.WriteLine("Count : list {0}", list.Count);
-            */
-            /*
+            
+            
             list.Add(12); list.Add(13); list.Add(15); list.Add(11); list.Add(10);
             //Console.WriteLine("Capacity of list : {0} ", list.Capacity);
             //Console.WriteLine("Count : list {0}", list.Count);
@@ -73,13 +73,12 @@ namespace Collection
                 {
                 Console.Write(list[i] + " ");
                 }Console.WriteLine();
-            */
-
-            /*
+            
+            
             //Binary Search
-            var s = list.BinarySearch(9);
+            object s = list.BinarySearch(9);
             var s1 =  list.BinarySearch(10);
-            if(s<0)
+            if(s.Equals(-1))
             Console.WriteLine("9 is not found on the list");
             if(s1>0)
             Console.WriteLine("10 found on the list at index : "+s1);
@@ -91,8 +90,8 @@ namespace Collection
                 Console.WriteLine("9 is not found on the list");
             if (c1==true)
                 Console.WriteLine("10 found on the list");
-            */
-            /*
+            
+            
             Console.WriteLine("Initial values of arrayList after reverse");
             list.Reverse();
             for (int i = 0; i < list.Count; i++)
@@ -119,9 +118,9 @@ namespace Collection
                 {
                 Console.Write(list[i]+" ");
                 }Console.WriteLine();
-            */
+            
 
-            /*
+            
             ///akta list e onno akta list insert kora  
             List<int> list1 = new List<int>();//creating new arraylist
             list1.Add(103); list1.Add(101); list1.Add(102); list1.Add(104);
@@ -137,8 +136,8 @@ namespace Collection
                 {
                 Console.Write(list1[i]+" ");
                 }Console.WriteLine(); 
+            
             */
-
 
             /*
            ///2. Dictionary <TKey, TValue>
@@ -199,7 +198,7 @@ namespace Collection
 
             /*
             //SortedList<string, string> sortedList = new SortedList<string, string>(4) { { "id","1702028"}, { "name1", "Jitu" }, { "email1", "amkhan@gmail.com" } };
-            SortedList<string,string> sortedList = new SortedList<string,string>(4);
+             SortedList<string,string> sortedList = new SortedList<string,string>(4);
              sortedList["id1"] = "1702028"; //Note:2
              sortedList["name1"] = "Jitu";
              sortedList["email1"] = "amkhan@gmail.com";
@@ -424,10 +423,10 @@ namespace Collection
            */
             /*
             LinkedList<string> linkedlist = new LinkedList<string>();
-            linkedlist.AddLast("one");
-            linkedlist.AddLast("two");
-            var t = linkedlist.AddLast("three");
-            linkedlist.AddFirst("ten");
+            linkedlist.AddLast("one"); // one
+            linkedlist.AddLast("two"); // one two 
+            var t = linkedlist.AddLast("three"); // one two three
+            linkedlist.AddFirst("ten"); //ten one two three
             
             linkedlist.AddBefore(t, "five");
             linkedlist.AddAfter(t, "six");

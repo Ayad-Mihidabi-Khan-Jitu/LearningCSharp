@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Collection.GenericClassesWithUserDefinedType</StartupObject>
+    <StartupObject>Collection.NonGenericCollection</StartupObject>
   </PropertyGroup>
 
 </Project>

@@ -4,14 +4,14 @@
  It is a value type catagory likewise structure
  Directly namespace er vitore enum type declare kora valo. 
  Class or Structure er vitoreo declare kora jay
- NOTE : enum typer data guli by default int, echara byte,sbyte,short,ushort,uint,long,ulong
-
+ NOTE : enum typer data guli by default int, echara byte,sbyte,short,ushort,uint,int,long,ulong
+Syntex: access_modifier     enum      enumName      { elements,elements,... }
 */
 
 using System;
 namespace Enumeration
     {
-     public enum Day
+     public enum Day //:int
         {
         Friday, Saterday, Sunday, Monday, Tuesday
         }
@@ -23,6 +23,7 @@ namespace Enumeration
 
     class ENum
         {
+        ///these are all automatic properties
         public static Day ImportantMeetingDate
             {
             get; set;
@@ -39,7 +40,6 @@ namespace Enumeration
             } = Day.Monday;
         static void Main(string[] args)
             {
-            Console.BackgroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Enumeration");
 
             Day day1=0; // index 0 initialize kora jay without casting 
@@ -50,11 +50,11 @@ namespace Enumeration
             Day day6 = (Day)5; //baki index duli initialize korar khetre cast must, index 5 bolte kichui nai so 5 ta e print korbe
 
             Console.WriteLine(day1);
-            Console.WriteLine((int)day2);
+            Console.WriteLine((int)day2); //
             Console.WriteLine(day3);
             Console.WriteLine(day4);
             Console.WriteLine(day5);
-            Console.WriteLine(day6);
+            Console.WriteLine(day6); //5
 
             Console.WriteLine(ImportantMeetingDate);
             Console.WriteLine(CasualMeetingDate);
@@ -69,7 +69,7 @@ namespace Enumeration
                 {
                 Console.WriteLine(role);
                 }
-
             }
+        
         }
     }

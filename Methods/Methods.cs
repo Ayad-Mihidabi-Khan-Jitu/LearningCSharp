@@ -44,7 +44,7 @@ jekhane function define kora ache sekhane chole jay]
 using System;
 namespace Methods
 {
-    class Methods
+   public class Methods
     {
    
         // 1. with_returned function(parameterized)

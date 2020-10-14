@@ -11,12 +11,12 @@
  3. Concurrent collection: era threads safe
      Example:
 ----------------------------------------------------
-Non-generic                             Generic
- ArrayList       ----------->         List <T>
- HashTable    ----------->          Dictionary <T>
- SortedList    ------------>        SortedList <T>
- Stack              ----------->         Stack <T>
- Queue            ----------->         Queue <T>
+Non-generic                               Generic
+ ArrayList        ----------->        List <T>
+ HashTable      ----------->        Dictionary <T>
+ SortedList      ----------->        SortedList <T>
+ Stack               ----------->         Stack <T>
+ Queue              ----------->        Queue <T>
 Note: * has no vice versa
 --------------------------------------------------
 */
@@ -38,20 +38,19 @@ namespace Collection
             -middle theke kono element delete/remove kora jay na
             -middle e kono element insert/add kora jay na
             */
-            
-            int[] array = new int[3] { 1,2,3};
+            /*
+            int[] array = new int[3]; // int a;
             array[0] = 1; array[1] = 2; array[2] = 3;
             //array[3] = 4;//runtime exception asbe
-            /*
+           
             ///[Manual Resizing] creating a new array with a bigger size and copying old array's value and giving new values then
             int[] array1 = new int[5];
             array1[0] = array[0]; array1[1] = array[1]; array1[2] = array[2]; array1[3] = 4; array1[4] = 5;
-            
             ///[Using Resize Resizing]
             Array.Resize(ref array, 5);
             array[3] = 4; array[4] = 5;//runtime exception asbe na 
-           * /
-
+           // array[0] ; array[1] ; array[2];
+            */
 
 
             /*
@@ -67,38 +66,40 @@ namespace Collection
             /*
             ArrayList arrayList = new ArrayList(2); // arraylist with no elements 
             //ArrayList arrayList = new ArrayList(4) {1,'A',"jitu",true}; // arraylist with initialized elements
-            //Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
-            //Console.WriteLine("Count : arrayList {0}", arrayList.Count);
-            //arrayList[0] = 0; Note:1 // Runtime exception ashbe "Index was out of range"
+            Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
+            Console.WriteLine("Count : arrayList {0}", arrayList.Count);
+            //arrayList[0] = 0; //Note:1 // Runtime exception ashbe "Index was out of range"
             arrayList.Add(1);
             Console.WriteLine(arrayList[0]);
             arrayList[0] = 0;
             Console.WriteLine(arrayList[0]);
-            arrayList.Add(false);
+            arrayList.Add("kutta");
             Console.WriteLine(arrayList[1]);
-            arrayList[1] = 0;
+            arrayList[1] = 1;
+            Console.WriteLine(arrayList[1]);
+            */
+
+           // arrayList[1] = 0;
+            /*
             Console.WriteLine(arrayList[1]);
             Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
             Console.WriteLine("Count : arrayList {0}", arrayList.Count);
             arrayList.Add("hudai");
             Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
             Console.WriteLine("Count : arrayList {0}", arrayList.Count);
-            //arrayList.Add(1); arrayList.Add(2); arrayList.Add(3); arrayList.Add(4); arrayList.Add(4);
-            //Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
+            arrayList.Add(1); arrayList.Add(2); arrayList.Add(3); arrayList.Add(4); arrayList.Add(4);
+            Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
             //Console.WriteLine("Count : arrayList {0}", arrayList.Count);
-            */
-
-            /*
+            
             Console.WriteLine("Initial values of arrayList");
             for (int i = 0; i < arrayList.Count; i++)
                 {
                 Console.Write(arrayList[i]+" "); 
-                }Console.WriteLine(); 
+                }Console.WriteLine();
             ///Capacity : koto memory se nilo | Count : kotota element ache
             //Console.WriteLine("Capacity of arrayList : {0} ", arrayList.Capacity);
             //Console.WriteLine("Count : arrayList {0}", arrayList.Count);
-            */
-
+            
             /*
             //arrayList.Sort();
             arrayList.Add(12); //adding 12 
@@ -110,7 +111,7 @@ namespace Collection
                 }Console.WriteLine();
             
             Console.WriteLine("After removing 'A' and removing at index 3");
-            arrayList.Remove('A');//removing 'A'
+            arrayList.Remove('Y');//removing 'A'
             arrayList.RemoveAt(3); //removing index 3
             for (int i = 0; i < arrayList.Count; i++)
                 {
@@ -118,13 +119,14 @@ namespace Collection
                 }Console.WriteLine();
 
             ///akta array list e onno akta array list insert kora  
-            ArrayList arrayList1 = new ArrayList();//creating new arraylist
-            arrayList1.Add(103); arrayList1.Add(101); arrayList1.Add(102); arrayList1.Add(104);
+            ArrayList arrayList1 = new ArrayList();//{6,7,8};//creating new arraylist
+            //arrayList1.Add(103); arrayList1.Add(101); arrayList1.Add(102); arrayList1.Add(104);
             Console.WriteLine("Initial values of arrayList1");
             for (int i = 0; i < arrayList1.Count; i++)
                 {
                 Console.Write(arrayList1[i]+" ");
-                }Console.WriteLine(); 
+                }Console.WriteLine();
+            //ArrayList coOfArr = new ArrayList(arrayList);
             arrayList.InsertRange(1, arrayList1);
             Console.WriteLine("Values of arrayList after inserting arrayList1 at index 1");
             for (int i = 0; i < arrayList.Count; i++)
@@ -141,6 +143,7 @@ namespace Collection
                 }Console.WriteLine(); Console.WriteLine();
             */
 
+
             /*
             ///2. Hashtable
             -It uses a key(user defined index) to access the elements
@@ -156,38 +159,41 @@ namespace Collection
             hashtable["id1"] = 1702028; //Note:2
             hashtable["name1"] = "Jitu";
             hashtable["email1"] = "amkhan@gmail.com";
-            hashtable.Add("id2", 28);
-            hashtable.Add("name2", "Eshita");
-            hashtable.Add("email2", "eshitakhan@hotmail.com");
-            
+            //Console.WriteLine(hashtable["id1"].GetHashCode());
+            //Console.WriteLine(hashtable["name1"].GetHashCode());
+            //Console.WriteLine(hashtable["email1"].GetHashCode());
+            //Console.WriteLine(hashtable["email1"]); 
+            //hashtable.Add("id2", 28);
+            //hashtable.Add("name2", "Eshita");
+            //hashtable.Add("email2", "eshitakhan@hotmail.com");
+
             if (hashtable.ContainsValue("Jit"))
                 {
                 Console.WriteLine("This student name is already in the list");
                 }
             else
                 {
-                hashtable.Add("email3", "joti@gmail.com"); //need both Tect 1 & Tech 2 
+                hashtable.Add("email3", "Jit@gmail.com"); //need both Tect 1 & Tech 2 
                 //hashtable.Add(9, "joti@gmail.com"); //need Tect 2
                 }
-            */
-
-            /*
+            
            // Get a collection of the keys.
            ICollection key = hashtable.Keys;
+            //object key = hashtable.Keys;
            ///Tect 1 : printing the value of hashtable  
            foreach (string k in key)
                {
                Console.WriteLine(k + ": " + hashtable[k]);
                }
-          */
-
-            /*
+          
+           /*
             ///Tect 2 : printing the value of hashtable
             foreach (object k1 in hashtable.Keys) // Getting object of the keys.
                 {
                 Console.WriteLine(k1 + ": " + hashtable[k1]);
                 }Console.WriteLine();
            */
+
 
 
             /*
@@ -203,18 +209,19 @@ namespace Collection
                             4. value guli key onujayi access korte hole : Console.WriteLine(sortedList1[key]); key='a',"abc",1,2,... 
             */
 
-            /* 
+             /*
              SortedList sortedList = new SortedList(4);
-             sortedList["id1"] = 1702028; //Note:2
+             sortedList["28"] = 1702028; //Note:2
              sortedList["name1"] = "Jitu";
              sortedList["email1"] = "amkhan@gmail.com";
-             sortedList.Add("id2", 28);
+             sortedList.Add("45", 45);
              sortedList.Add("name2", "Eshita");
              sortedList.Add("email2", "eshitakhan@hotmail.com");
              //Console.WriteLine(sortedList[0]);
              ICollection key3 = sortedList.Keys;
              string vals = "Values of sortedList";
              Console.WriteLine("Keys{0,29}",vals);
+            ///print("%10d %d %d",1,8,9)/// 1           8 9
              foreach (object k3 in key3)
              Console.WriteLine("{0,-13}{1}",k3, sortedList[k3]);
              //Console.WriteLine(String.Format("{0}{1,10}", k3, sortedList[k3])); 
@@ -247,9 +254,10 @@ namespace Collection
             stack.Push("Plate2");
             stack.Push("Plate3");
             stack.Push("Plate4");
+            //string s = "plate12";
             //Console.WriteLine(stack[0]);
             Console.WriteLine("Current stack: ");
-            foreach (string s in stack)
+            foreach (string s in stack) /// 
                 {
                 Console.Write(s + " ");
                 }Console.WriteLine();
@@ -271,7 +279,7 @@ namespace Collection
                 Console.Write(s + " ");
                 } Console.WriteLine();
 
-            Console.WriteLine("Removing 3 Elements from the stact");
+            Console.WriteLine("Removing 3 Elements from the stack");
             ///Poping(removing) 3 elements from the stack
             stack.Pop();
             stack.Pop();
@@ -293,7 +301,6 @@ namespace Collection
                          2. No value initialization ; //Queue queue = new Queue(){1,"tt"};
                          3. No access by index ; //Console.WriteLine(queue[0]);
            */
-
             /*
             Queue queue = new Queue();
 

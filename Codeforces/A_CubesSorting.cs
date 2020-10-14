@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Codeforces
     {
-    class CubesSorting
+    class A_CubesSorting
         {
         static void Main(string[] args)
             {

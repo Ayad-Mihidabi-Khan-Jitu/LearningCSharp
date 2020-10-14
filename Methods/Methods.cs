@@ -137,7 +137,6 @@ namespace Methods
         {
             Console.WriteLine("Methods");
             Console.WriteLine("----------");
-
             double num1, num2;
             //string n1 = Console.ReadLine(); 
             //int num1 = Convert.ToInt32(n1);  

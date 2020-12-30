@@ -8,7 +8,7 @@
      Lambda Expression : It is a short hand for writing Anonymous Methods. 
      -    "=>"   is called Lambda Operator 
     Syntex: NameOfDelegate nameofOject = (parameter/paramaters) => {code what was inside in the methods};
-
+    NOTE : Anonymous Method can't use : param, ref, out and generic.
 */
 using System;
 namespace Delegate

@@ -61,7 +61,7 @@ namespace Collection
             -Add and remove items from a list at a specified position using an index and the array resizes itself automatically. 
             -Allows dynamic memory allocation, adding, searching and sorting items in the list.
             NOTE: 1. Add() chara index create hoy na
-             */
+            */
 
             /*
             ArrayList arrayList = new ArrayList(2); // arraylist with no elements 

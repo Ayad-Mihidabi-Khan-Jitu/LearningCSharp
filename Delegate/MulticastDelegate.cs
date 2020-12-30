@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+Akta delegaet use kore dui ta method e call kora ata tokhon e somvob jokhon
+    -method guli void hobe
+    -parameter er num abong singnature er hobe
+NOTE : Multicast Delegate mainly amra "DelegateOfCalcAB(int a, int b)" er khetre dekhte parbo
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -29,7 +35,7 @@ namespace Delegate
             }
         static void Main()
             {
-            ///Process-1 Method Calling
+            ///Process-1 Method Calling directly
             MulticastDelegate m1 = new MulticastDelegate();
             m1.Addition(1,2);
             m1.Substraction(1,2);
@@ -42,12 +48,14 @@ namespace Delegate
             AddOfAB(2, 2);
             SubOfAB(2, 2);
 
-            ///Process-3 Delegate binding and calling two mathods in one call
+            ///Here multicast happens
+            ///Process-3 Delegate binding and calling two mathods in one call jokhon method ti void hobe 
             MulticastDelegate m2 = new MulticastDelegate();
             DelegateOfCalcAB CalOfAB = m2.Addition;
             CalOfAB = CalOfAB + m2.Substraction; 
             CalOfAB(20, 15);///method will not be overriden
 
+            ///Here multicast did not heppen due to return type
             ///Process-3 Delegate binding and calling two mathods in one call but method overrides(only one return which is last method's)
             MulticastDelegate m3 = new MulticastDelegate();
             DelegateOfABMulDiv CalOfABMulDiv = m3.Multiplication;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿///aida cholesky na LU decomposition
+using System;
 namespace NumericalMethods
     {
     class CholeskyMethods

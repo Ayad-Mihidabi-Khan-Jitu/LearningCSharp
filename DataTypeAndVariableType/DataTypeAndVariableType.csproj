@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>DataTypeAndVariableType.StringAndStringBuilder</StartupObject>
+    <StartupObject>DataTypeAndVariableType.LiteralsAndDigitSeparators</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

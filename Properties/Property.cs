@@ -1,6 +1,6 @@
 ﻿/*
 Properties er mul uddsho holo akta class er private instance variable guli k access korar mechanism 
-NOTE: constructor er maddhomeo private instance variables guli get kora jay but get korte pari na
+NOTE: constructor er maddhomeo private instance variables guli set kora jay but get korte pari na
 Syntex: access_modifier    dataType        property_name {  get{}; set;  }
 */
 using System;

@@ -67,8 +67,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuples", "Tuples\Tuples.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternMatching", "PatternMatching\PatternMatching.csproj", "{BCBE4A72-38AF-4576-8AAF-32E98BB95BAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDatabase", "LearningDatabase\LearningDatabase.csproj", "{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacrosAndPreProcessors", "MacrosAndPreProcessors\MacrosAndPreProcessors.csproj", "{4B4056A6-1960-442E-B343-5475A285D928}"
 EndProject
 Global
@@ -335,14 +333,6 @@ Global
 		{BCBE4A72-38AF-4576-8AAF-32E98BB95BAB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCBE4A72-38AF-4576-8AAF-32E98BB95BAB}.Release|Default.ActiveCfg = Release|Any CPU
 		{BCBE4A72-38AF-4576-8AAF-32E98BB95BAB}.Release|Default.Build.0 = Release|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Debug|Default.ActiveCfg = Debug|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Debug|Default.Build.0 = Debug|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Release|Default.ActiveCfg = Release|Any CPU
-		{B985B1C4-9B0F-4C4B-9A74-0FDEF639601B}.Release|Default.Build.0 = Release|Any CPU
 		{4B4056A6-1960-442E-B343-5475A285D928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4B4056A6-1960-442E-B343-5475A285D928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B4056A6-1960-442E-B343-5475A285D928}.Debug|Default.ActiveCfg = Debug|Any CPU
